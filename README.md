@@ -16,6 +16,6 @@ Come back later
 
 ## Documentation
 
-![Document Preview](p1.png)
+![Document Preview](p1.jpeg)
 
 To view the full document, please refer to the attached PDF file: `p1.pdf`.
