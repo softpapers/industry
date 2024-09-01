@@ -30,7 +30,7 @@
 
 \title[IGS \LaTeXe\ guide]{int != Integer; How choosing the right data type could improve your system's performance}
 
-\author[Baxter and others]{#skill-java@Andela.com,$^1$
+\author[Baxter and others]{#skill-java from Andela.com,$^1$
   Amuda A,$^2$\protect\thanks{Present address:
   Centre for Glaciology, Institute of Geography and
   Earth Sciences, University of Wales, Aberystwyth,
@@ -47,8 +47,8 @@ $^2$Contributor from Andela Java Community\\
 
 \begin{abstract}
 
-A fast and highly responsive system doesn't only come from scaling the system horizontally or vertically, but the underlying implementation
-plays a huge role which is mostly underestimated. int is never the same as Integer, and applying the wrong data type comes with a hidden cost which will impact your system's performance negatively, and the goal of this paper is to show you how choosing the right data type could improve your system's performance.
+A fast and highly responsive system doesn't only come from scaling the system horizontally or vertically, but the underlying implementations
+plays a huge role which is mostly underestimated. int is never the same as Integer, and applying the wrong data type comes with a hidden cost which could impact your system's performance negatively, and the goal of this paper is to show you how choosing the right data type could improve your system's performance.
 \end{abstract}
 
 \end{frontmatter}
@@ -56,26 +56,27 @@ plays a huge role which is mostly underestimated. int is never the same as Integ
 
 \section{int and Integer history}
 
-If you intend to store or read a number, int or Integer data type will be considered. Both might serve the same results for end users,
+If you intend to store or read a number, int or Integer data type will mostly be considered, while both might serve the same results for the end users,
 they are meant to be used correctly. int is a primitive data type which has a 32-bit size, meaning you can store or maintain a number not more or lesser than -2^3^2 to 2^3^1
 
-Inetger is a reference data type that also maintains the same bit size as int, but has an object reference in its memory with the reference
+Integer is a reference data type that also maintains the same bit size as int, but has an object reference in its memory with a reference or
 pointing to another reference.
 
-
 \caption{
-
+\\
+\\
+\\
+\\
+\\
+\hline
 One-column table captions will   Table captions do not have full points at the end}
 \label{period}
 \begin{minipage}{80mm}% you only need this line if you
   % have a table footnote
 \begin{tabular}{@{}lcc}\hline
-Properties\footnote{Please do not use more than one `\' 
-  between columns, and note that if a table includes 
-  table footnotes, it must be inside a \texttt{minipage} 
-  environment.}\%& int& Integer\\ \hline
+Properties\footnote{.}\%& int& Integer\\ \hline
 Size& $32 bits$& 32 bits\\
-Subclass of Object& $No$& Yes\\
+Subclass of Number in Object& $No$& Yes\\
 Require memory& $<=32 bits$& 64 bits+\\
 Autoboxing & $No$& Yes\\
 Requires pointer& $No$& Yes\\
@@ -118,7 +119,7 @@ ii. For it to be created, it must be store
 		    
 		    HashCode of that object
 
-      Header of the objects
+      Header details of the objects
 		    
 		    
 
