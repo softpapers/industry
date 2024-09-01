@@ -110,10 +110,10 @@
 \apptocmd{\endabstract}{\vskip30pt plus 10pt minus 2pt}{}{}
 
 \if@aog
-  \def\@journal{SofPaper of Andela \@volume (\@issueno) \@pubyear}
+  \def\@journal{SofPaper of Sapafy Vol.\@volume (\@issueno) \@pubyear}
 \fi
 \if@jog
-  \def\@journal{SofPaper of Andela, Vol.\ \@volume, No.\ \@issueno, \@pubyear}
+  \def\@journal{SofPaper of Sapafy, Vol.\ \@volume, No.\ \@issueno, \@pubyear}
 \fi
 
 \setcounter{secnumdepth}{0}
