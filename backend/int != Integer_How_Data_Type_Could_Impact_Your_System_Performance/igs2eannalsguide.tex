@@ -30,16 +30,16 @@
 
 \title[IGS \LaTeXe\ guide]{int != Integer; How choosing the right data type could improve your system's performance}
 
-\author[Baxter and others]{#skill-java from Andela.com,$^1$
+\author[Baxter and others]{#SoftPapers,$^1$
   Amuda A,$^2$\protect\thanks{Present address:
   Centre for Glaciology, Institute of Geography and
   Earth Sciences, University of Wales, Aberystwyth,
   UK.}}
 
 \affiliation{%
-$^1$Andela Java Community\\
-$^2$Contributor from Andela Java Community\\
-  \email{amuda.adeolu@andela.com}}
+$^1$Sapafy's SoftPaper\\
+$^2$Contributor from Sapafy\\
+  \email{amuda@sapafy.com}}
 
 \begin{frontmatter}
 
@@ -57,10 +57,11 @@ plays a huge role which is mostly underestimated. int is never the same as Integ
 \section{int and Integer history}
 
 If you intend to store or read a number, int or Integer data type will mostly be considered, while both might serve the same results for the end users,
-they are meant to be used correctly. int is a primitive data type which has a 32-bit size, meaning you can store or maintain a number not more or lesser than -2^3^2 to 2^3^1
+they are meant to be used correctly. int is a primitive data type which has a 32-bit size, meaning you can store or maintain a number not more or lesser than -2^3^2 to  
+  2^3^1
 
 Integer is a reference data type that also maintains the same bit size as int, but has an object reference in its memory with a reference or
-pointing to another reference.
+pointer to another reference.
 
 \caption{
 \\
@@ -74,7 +75,7 @@ One-column table captions will   Table captions do not have full points at the e
 \begin{minipage}{80mm}% you only need this line if you
   % have a table footnote
 \begin{tabular}{@{}lcc}\hline
-Properties\footnote{.}\%& int& Integer\\ \hline
+Properties\footnote{.} \%& int& Integer\\ \hline
 Size& $32 bits$& 32 bits\\
 Subclass of Number in Object& $No$& Yes\\
 Require memory& $<=32 bits$& 64 bits+\\
@@ -93,7 +94,7 @@ Comparison operation& $==$& \llap{$$}equals\end{tabular}
 
 Short answer: 
 
-It has additional properties that need to be maintained which requires more memory
+It has more properties that need to be maintained once it's created.
 
 
 Long answer: 
@@ -101,7 +102,7 @@ Long answer:
   
   1. It's a class
 
-  2. All class in Java are a subclass of Object
+  2. All classes in Java are a subclass of Object
 
   3. All subclass in Java automatically extends the Object methods and properties
    
@@ -109,13 +110,13 @@ Long answer:
 		  
 		  i.  It  must be created \n
 
-ii. For it to be created, it must be store
+ii. For it to be created, it must be stored in a temporary or permanent storage
 		  
-    iii.For it to be stored, it must acquire a memory
+    iii. For it to be used, it must be referenced from the storage
 		  
-    iv. For it be be used and referenced elsewhere, it must maintain a properties to determine its uniqueness
+    iv. For it to be referenced, it must maintain properties to determine its uniqueness
 		  
-    v.  For it to be unique, its properties must be store into a memory which requires additional memory 
+    v.  For it to be unique, its properties must be stored in a memory which requires additional memory 
 		    
 		    HashCode of that object
 
