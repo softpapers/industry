@@ -18,4 +18,3 @@ Come back later
 
 ![Document Preview](p1.jpeg)
 
-To view the full document, please refer to the attached PDF file: `p1.pdf`.
